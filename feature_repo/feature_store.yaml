@@ -1,0 +1,13 @@
+registry:
+    registry_type: sql
+    path: postgresql://postgres:password@localhost:5432/postgres
+    cache_ttl_seconds: 60
+project: feast_kafka_demo
+provider: local
+online_store:
+  type: redis
+  # Note: this would normally be using instance URL's to access Redis
+  connection_string: localhost:6379
+offline_store:
+  type: file
+entity_key_serialization_version: 2

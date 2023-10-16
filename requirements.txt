@@ -1,0 +1,5 @@
+feast[redis]
+pandas
+scikit-learn
+pyspark
+psycopg2-binary
